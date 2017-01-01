@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     {{! Document Settings }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
     <meta name="google-site-verification" content="EtRhtgTCuw3FB1j1_zh8VpOllMNVJR42NGXFrS9BG7E" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     {{ghost_head}}
-</head>
-<body class="{{body_class}} nav-closed">
+  </head>
+  <body class="{{body_class}} nav-closed">
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-        {{#if @blog.logo}}
-        <a class="site-avatar" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+          {{#if @blog.logo}}
+          <a class="site-avatar" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
           <div class="site-info">
-              <h1 class="site-name"><b><a href="/">{{@blog.title}}</a></b></h1>
-              <p class="site-description">{{@blog.description}}</p>
+            <h1 class="site-name"><b><a href="/">{{@blog.title}}</a></b></h1>
+            <p class="site-description">{{@blog.description}}</p>
           </div>
-            {{navigation}}
+          {{navigation}}
         </header>
       </div>
     </div>
-        {{! Everything else gets inserted here }}
-        {{{body}}}
-
+    {{! Everything else gets inserted here }}
+    {{{body}}}
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-<a href="https://github.com/GhostTheme"><i class="svg-icon github"></i></a>
-<a href="https://www.twitter.com/sudoask"><i class="svg-icon twitter"></i></a>
-<a href="https://blog.sudoask.com/rss"><i class="svg-icon rss"></i></a>
+          <a href="https://github.com/GhostTheme"><i class="svg-icon github"></i></a>
+          <a href="https://www.twitter.com/sudoask"><i class="svg-icon twitter"></i></a>
+          <a href="https://blog.sudoask.com/rss"><i class="svg-icon rss"></i></a>
         </footer>
       </div>
     </div>
     {{ghost_foot}}
-</body>
+  </body>
 </html>

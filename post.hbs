@@ -4,15 +4,13 @@
 {{#post}}
 <div id="main" role="main" class="container">
       <article class="post">
-  <h2>{{title}}</h1>
+  <h2 class="post-title">{{title}}</h1>
+  <p class="date">{{date format="MMMM DD, YYYY"}}</p>
   <div class="entry">
 	<span class="post-image">
 	</span>
 
             {{content}}
-  </div>
-  <div class="date">
-  <p>  Written on {{date format="DD MMMM YYYY"}}</p>
   </div>
 {{> "relate"}}  
 {{> "share"}}  
